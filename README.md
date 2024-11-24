@@ -72,7 +72,6 @@ This project analyzes media data to evaluate the impact of various marketing cha
 
 ## Installation and Usage
 
-### **1. Clone the Repository**
 ```bash
 git clone https://github.com/your-repo/media-data-analysis.git
 cd media-data-analysis
