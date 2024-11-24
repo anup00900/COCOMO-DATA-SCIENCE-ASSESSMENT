@@ -86,3 +86,127 @@ pip install -r requirements.txt
 ├── roi_summary.csv          # ROI analysis results
 ├── geo_efficiency.csv       # Geo-specific efficiency metrics
 
+## Media Data Analysis: Answers to All Questions
+
+---
+
+## **1. Which marketing channels influence revenue the most? The least? How confident are you in these results?**
+
+### **Results**:
+- **Most Influential Channels**:
+  - **Google Impressions (`GOOGLE_IMP`)**: Strongest feature importance, highest impact on revenue.
+  - **Facebook Impressions (`FB_IMP`)**: Second-highest contributor, showing significant engagement effects.
+  - **Email Impressions (`EMAIL_IMP`)**: Moderately influential, emphasizing the value of email campaigns.
+
+- **Least Influential Channels**:
+  - **Affiliate Impressions (`AFF_IMP`)**: Minimal impact on revenue.
+  - **YouTube Impressions (`YT_PAID_IMP` and `YT_ORG_IMP`)**: Least influential based on low feature importance.
+
+### **Confidence**:
+- The model’s **R² score of 0.78** indicates a strong fit and reliable insights.
+- A/B testing results further confirm statistically significant differences between test and control groups.
+
+---
+
+## **2. Is the business allocating spend across channels efficiently? If not, how would you reinvest or allocate your budget?**
+
+### **Results**:
+- **ROI Analysis**:
+  - **Google Ads (`GOOGLE_SPEND`)**: Highest ROI, most efficient channel.
+  - **Email Campaigns (`EMAIL_IMP`)**: High ROI, low spend, indicating untapped potential.
+  - **Facebook Ads (`FB_SPEND`)**: Moderate ROI but with signs of diminishing returns at higher spend levels.
+  - **Affiliate Marketing (`AFF_SPEND`)**: Lowest ROI, least efficient channel.
+
+### **Recommendations**:
+1. **Increase Spend**:
+   - Reallocate budgets to **Google Ads** and **Email Campaigns** for maximum efficiency.
+2. **Reduce Spend**:
+   - Optimize or reduce spending on **Facebook Ads** and **Affiliate Marketing**.
+3. **Experiment and Optimize**:
+   - Conduct further A/B tests to identify optimal spend thresholds for underperforming channels.
+
+---
+
+## **3. Are there differences in channel efficiency across geos? Would you change your model to incorporate geo-level differences?**
+
+### **Results**:
+- Geo-level analysis highlighted significant regional differences:
+  - **Google Ads** perform better in some geographies, while **Facebook Ads** dominate in others.
+  - Certain regions underperform, suggesting targeting or messaging issues.
+
+### **Model Insights**:
+- Including geo-specific interaction terms (e.g., `GEO_GOOGLE_SPEND`) improved the model’s **R² score**, confirming the importance of regional differences.
+
+### **Recommendations**:
+1. **Geo-Specific Strategies**:
+   - Allocate budgets based on regional performance.
+   - Emphasize high-performing channels in regions where they dominate.
+2. **Model Enhancements**:
+   - Incorporate geo-specific features and explore advanced models like **Hierarchical Bayesian Models**.
+
+---
+
+## **4. Are there any other observations or recommendations you would make to the team?**
+
+### **Observations**:
+1. **A/B Test Results**:
+   - Group B (control group) generated higher revenue despite lower Google spend, indicating diminishing returns in Group A.
+2. **Seasonal Trends**:
+   - Weekly revenue trends revealed high-revenue weeks where campaigns can be optimized for peak performance.
+3. **Channel Synergies**:
+   - Interaction effects (e.g., `GOOGLE_FB_SPEND`) suggested that combined campaigns (e.g., Google + Facebook) may amplify returns.
+
+### **Recommendations**:
+1. **Seasonal Campaign Adjustments**:
+   - Focus efforts on high-revenue weeks.
+   - Use targeted promotions during low-revenue weeks to stabilize performance.
+2. **Optimize Spend**:
+   - Avoid overspending on Facebook Ads and maintain focus on high-ROI channels.
+3. **Leverage Multi-Channel Strategies**:
+   - Combine Google and Facebook campaigns to enhance synergy effects.
+
+---
+
+## **5. A/B Testing Results**
+
+### **Experiment Setup**:
+- **Group A**: Increased Google spend by 20% and optimized targeting.
+- **Group B**: Maintained current Google spend and targeting strategy.
+
+### **Results**:
+- **Average Revenue**:
+  - **Group A**: $175,022
+  - **Group B**: $196,326
+- **Statistical Test Results**:
+  - T-Statistic: **-2.54**
+  - P-Value: **0.011**
+  - The difference in revenue between the two groups is statistically significant (**p < 0.05**).
+
+### **Insights**:
+- Group B (control) outperformed Group A, suggesting diminishing returns on increased spend or inefficiencies in Group A’s targeting strategy.
+
+---
+
+## **6. Recommendations Based on A/B Test**
+
+1. **Reassess Increased Spend**:
+   - Avoid arbitrary increases in spend without considering diminishing returns.
+   - Optimize targeting and ad quality instead of purely increasing spend.
+   
+2. **Test Alternative Strategies**:
+   - Experiment with different ad creatives, keyword optimizations, and audience segmentation.
+   
+3. **Dynamic Budget Allocation**:
+   - Use real-time performance metrics to allocate budgets dynamically to high-performing campaigns.
+
+---
+
+## **Summary**
+
+This analysis provides actionable insights to improve marketing efficiency:
+1. Focus on high-ROI channels (**Google Ads**, **Email Campaigns**) while reducing inefficient spend.
+2. Tailor strategies regionally based on geo-specific performance.
+3. Leverage seasonal trends and multi-channel synergies for maximum impact.
+4. Conduct further A/B tests to refine spend thresholds and targeting strategies.
+
+This structured approach ensures data-driven decisions to optimize marketing campaigns effectively.
