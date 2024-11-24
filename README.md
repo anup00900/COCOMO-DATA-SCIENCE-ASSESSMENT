@@ -69,23 +69,6 @@ This project analyzes media data to evaluate the impact of various marketing cha
    - Combine **Google Ads** and **Facebook Ads** to leverage synergies.
 
 ---
-
-## Installation and Answer to Questions
-
-```bash
-git clone https://github.com/your-repo/media-data-analysis.git
-cd media-data-analysis
-
-pip install -r requirements.txt
-
-├── media_data.csv           # Input dataset
-├── analysis.py              # Main analysis script
-├── README.md                # Project documentation
-├── requirements.txt         # Python dependencies
-├── feature_importance.csv   # Feature importance results
-├── roi_summary.csv          # ROI analysis results
-├── geo_efficiency.csv       # Geo-specific efficiency metrics
-
 ## Media Data Analysis: Answers to All Questions
 
 ---
@@ -210,3 +193,21 @@ This analysis provides actionable insights to improve marketing efficiency:
 4. Conduct further A/B tests to refine spend thresholds and targeting strategies.
 
 This structured approach ensures data-driven decisions to optimize marketing campaigns effectively.
+
+
+## Installation and Answer to Questions
+
+```bash
+git clone https://github.com/your-repo/media-data-analysis.git
+cd media-data-analysis
+
+pip install -r requirements.txt
+
+├── media_data.csv           # Input dataset
+├── analysis.py              # Main analysis script
+├── README.md                # Project documentation
+├── requirements.txt         # Python dependencies
+├── feature_importance.csv   # Feature importance results
+├── roi_summary.csv          # ROI analysis results
+├── geo_efficiency.csv       # Geo-specific efficiency metrics
+
