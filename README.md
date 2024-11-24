@@ -195,7 +195,7 @@ This analysis provides actionable insights to improve marketing efficiency:
 This structured approach ensures data-driven decisions to optimize marketing campaigns effectively.
 
 
-## Installation and Answer to Questions
+## Installation and Usage
 
 ```bash
 git clone https://github.com/your-repo/media-data-analysis.git
